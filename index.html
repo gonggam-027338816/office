@@ -1,401 +1,89 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>공감탐정행정사사무소 | 행정심판·부동산계약·권리금·비자·국제결혼 전문</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
-      background-color: #f7f6f2;
-      color: #1e2424;
-      line-height: 1.65;
-    }
-    a { text-decoration: none; color: inherit; }
+[!DOCTYPE html]
+[html lang="ko"]
+[head]
+[meta charset="UTF-8" /]
+[meta name="viewport" content="width=device-width, initial-scale=1.0" /]
+[title]공감탐정행정사사무소 | 행정심판·부동산계약·권리금·비자·국제결혼 전문[/title]
+[style]
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background-color: #faf7f7; color: #1e1e1e; line-height: 1.65; }
+a { text-decoration: none; color: inherit; }
+.top-bar { background-color: #4a1525; color: #ffffff; padding: 15px 20px; border-bottom: 3px solid #c59b5f; }
+.top-inner { max-width: 1120px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; font-weight: bold; }
+.nav-links a { padding: 7px 13px; background-color: rgba(255,255,255,0.12); border-radius: 6px; color: #ffffff; }
+.nav-links a:hover { background-color: #c59b5f; }
+.top-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn-gold { background-color: #c59b5f; color: #ffffff; padding: 7px 15px; border-radius: 20px; font-size: 13px; font-weight: bold; }
+.btn-border { border: 1px solid #c59b5f; color: #f7e6c4; padding: 7px 15px; border-radius: 20px; font-size: 13px; font-weight: bold; }
+.hero { background: linear-gradient(135deg, #4a1525 0%, #6b1d35 100%); color: #ffffff; text-align: center; padding: 48px 20px; border-bottom: 4px solid #c59b5f; }
+.logo-g { width: 58px; height: 58px; margin: 0 auto 14px; border: 2px solid #c59b5f; border-radius: 50%; line-height: 54px; font-size: 28px; font-weight: bold; color: #c59b5f; font-family: Georgia, serif; }
+.hero h1 { font-size: 28px; margin-bottom: 10px; }
+.hero p { font-size: 16px; color: #f2e6e9; margin-bottom: 16px; }
+.hero-pill { display: inline-block; background-color: rgba(197, 155, 95, 0.25); border: 1px solid #c59b5f; color: #f7e6c4; padding: 7px 18px; border-radius: 20px; font-size: 14px; font-weight: bold; }
+.container { max-width: 1120px; margin: 30px auto; padding: 0 20px; }
+.sec-title { font-size: 22px; color: #4a1525; border-left: 5px solid #c59b5f; padding-left: 12px; margin: 42px 0 8px; }
+.sec-desc { color: #555555; font-size: 14px; margin-bottom: 20px; padding-left: 17px; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+.card { background-color: #ffffff; border-radius: 10px; padding: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-top: 4px solid #4a1525; }
+.card h3 { font-size: 17px; color: #4a1525; margin-bottom: 10px; }
+.card p { font-size: 14px; color: #333333; }
+.collab-box { background-color: #f7f1e8; border: 1px solid #dfc9a6; border-radius: 10px; padding: 24px; margin-top: 26px; }
+.collab-box h3 { color: #4a1525; font-size: 18px; margin-bottom: 14px; }
+.collab-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+.collab-item { background-color: #ffffff; padding: 15px; border-radius: 6px; font-size: 14px; color: #222222; border-left: 4px solid #c59b5f; }
+.visa-banner { background-color: #fffdf8; border: 1px solid #dfc9a6; border-left: 5px solid #c59b5f; border-radius: 8px; padding: 18px 20px; margin-bottom: 22px; }
+.visa-banner p { font-size: 14.5px; color: #4a1525; font-weight: bold; margin-bottom: 7px; }
+.visa-banner p:last-child { margin-bottom: 0; }
+.visa-grid-8 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+.visa-hover-card { background-color: #ffffff; border: 1px solid #e6dada; border-top: 4px solid #4a1525; border-radius: 10px; padding: 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); transition: all 0.25s ease; cursor: pointer; }
+.visa-hover-card:hover, .visa-hover-card:focus-within { border-top-color: #c59b5f; background-color: #fffef9; box-shadow: 0 6px 16px rgba(74, 21, 37, 0.14); transform: translateY(-2px); }
+.visa-card-head { font-size: 16px; font-weight: bold; color: #4a1525; display: flex; justify-content: space-between; align-items: center; }
+.visa-tag { font-size: 11px; background-color: #f7f1e8; color: #8a642c; padding: 3px 8px; border-radius: 10px; font-weight: bold; }
+.visa-hover-desc { max-height: 0; overflow: hidden; opacity: 0; transition: all 0.3s ease; font-size: 13.5px; color: #333333; }
+.visa-hover-card:hover .visa-hover-desc, .visa-hover-card:focus-within .visa-hover-desc { max-height: 260px; opacity: 1; margin-top: 12px; padding-top: 10px; border-top: 1px dashed #d8c8c8; }
+.visa-hover-desc ul { padding-left: 16px; margin-top: 5px; }
+.visa-hover-desc li { margin-bottom: 4px; }
+.contact-wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-top: 40px; }
+.contact-panel { background-color: #ffffff; border-radius: 10px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-top: 4px solid #c59b5f; }
+.contact-panel h3 { color: #4a1525; font-size: 18px; margin-bottom: 14px; }
+.form-row { margin-bottom: 12px; }
+.form-row label { display: block; font-size: 13px; font-weight: bold; color: #4a1525; margin-bottom: 4px; }
+.form-row select, .form-row input, .form-row textarea { width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 6px; font-size: 14px; color: #111111; }
+.btn-submit { width: 100%; background-color: #4a1525; color: #ffffff; border: none; padding: 12px; border-radius: 6px; font-size: 15px; font-weight: bold; cursor: pointer; }
+.btn-submit:hover { background-color: #c59b5f; }
+.info-card-btn { display: block; background-color: #faf7f7; border: 1px solid #e0d4d4; padding: 13px; border-radius: 8px; text-align: center; font-weight: bold; color: #4a1525; font-size: 15px; margin-bottom: 10px; }
+.info-card-btn span { display: block; font-size: 12px; color: #555555; font-weight: normal; margin-top: 3px; }
+.footer-area { background-color: #4a1525; color: #ffffff; padding: 42px 20px; margin-top: 50px; font-size: 14px; border-top: 4px solid #c59b5f; }
+.footer-inner { max-width: 1120px; margin: 0 auto; }
+.footer-brand { color: #e6c68e; font-size: 20px; font-weight: bold; margin-bottom: 12px; }
+.footer-inner p { margin-bottom: 7px; color: #f5ebeb; }
+.lang-box { margin-top: 18px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.25); display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 8px; }
+.lang-box p { background-color: rgba(255,255,255,0.09); padding: 9px 12px; border-radius: 6px; font-size: 13px; color: #ffffff; }
+.footer-copy { margin-top: 22px; text-align: center; color: #d4bebe; font-size: 12.5px; }
+[/style]
+[/head]
+[body]
+[div class="top-bar"]
+[div class="top-inner"]
+[div class="nav-links"]
+[a href="#home"]🏠 사무소 홈[/a]
+[a href="#appeal"]⚖ 행정심판·내용증명[/a]
+[a href="#realestate"]🏢 부동산·권리금·지속협력[/a]
+[a href="#visa"]✈ 비자·급행·3자통역[/a]
+[a href="#consult"]✉ 이메일·전화상담[/a]
+[/div]
+[div class="top-btns"]
+[a href="tel:010-8128-1079" class="btn-gold"]📞 010-8128-1079[/a]
+[a href="#consult" class="btn-border"]✉ 이메일 상담창[/a]
+[/div]
+[/div]
+[/div]
+[div id="home" class="hero"]
+[div class="logo-g"]G[/div]
+[h1]공감탐정행정사사무소[/h1]
+[p]행정심판 불복사유서 · 부동산 직거래 계약·권리금 · 출입국 급행대행·고용사유서·3자통역[/p]
+[div class="hero-pill"]🚗 근무시간 내 출장상담 가능 (출장비 발생) | 전국 비대면 서류 접수[/div]
+[/div]
 
-    /* 상단 네비게이션 (딥 에메랄드 + 샴페인 골드 테마) */
-    .top-bar {
-      background-color: #0f3d3e;
-      color: #ffffff;
-      padding: 15px 20px;
-      border-bottom: 3px solid #c59b5f;
-    }
-    .top-inner {
-      max-width: 1120px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-    }
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .nav-links a {
-      padding: 7px 13px;
-      background-color: rgba(255,255,255,0.12);
-      border-radius: 6px;
-      color: #ffffff;
-      transition: 0.2s;
-    }
-    .nav-links a:hover {
-      background-color: #c59b5f;
-      color: #ffffff;
-    }
-    .top-btns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .btn-gold {
-      background-color: #c59b5f;
-      color: #ffffff;
-      padding: 7px 15px;
-      border-radius: 20px;
-      font-size: 13px;
-      font-weight: bold;
-    }
-    .btn-border {
-      border: 1px solid #c59b5f;
-      color: #f5e6cc;
-      padding: 7px 15px;
-      border-radius: 20px;
-      font-size: 13px;
-      font-weight: bold;
-    }
-
-    /* 메인 히어로 배너 */
-    .hero {
-      background: linear-gradient(135deg, #0f3d3e 0%, #195354 100%);
-      color: #ffffff;
-      text-align: center;
-      padding: 48px 20px;
-      border-bottom: 4px solid #c59b5f;
-    }
-    .logo-g {
-      width: 58px;
-      height: 58px;
-      margin: 0 auto 14px;
-      border: 2px solid #c59b5f;
-      border-radius: 50%;
-      line-height: 54px;
-      font-size: 28px;
-      font-weight: bold;
-      color: #c59b5f;
-      font-family: Georgia, serif;
-    }
-    .hero h1 { font-size: 28px; margin-bottom: 10px; letter-spacing: 1px; }
-    .hero p { font-size: 16px; color: #e2ecec; margin-bottom: 16px; }
-    .hero-pill {
-      display: inline-block;
-      background-color: rgba(197, 155, 95, 0.22);
-      border: 1px solid #c59b5f;
-      color: #f7e6c4;
-      padding: 7px 18px;
-      border-radius: 20px;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    /* 본문 컨테이너 */
-    .container {
-      max-width: 1120px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-    .sec-title {
-      font-size: 22px;
-      color: #0f3d3e;
-      border-left: 5px solid #c59b5f;
-      padding-left: 12px;
-      margin: 42px 0 8px;
-    }
-    .sec-desc {
-      color: #4a5555;
-      font-size: 14px;
-      margin-bottom: 20px;
-      padding-left: 17px;
-    }
-
-    /* 3단 카드 그리드 */
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 18px;
-    }
-    .card {
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 22px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-      border-top: 4px solid #0f3d3e;
-    }
-    .card h3 {
-      font-size: 17px;
-      color: #0f3d3e;
-      margin-bottom: 10px;
-    }
-    .card p {
-      font-size: 14px;
-      color: #333333;
-    }
-
-    /* 지속 협력 광고 패널 */
-    .collab-box {
-      background-color: #f2ece1;
-      border: 1px solid #d9cbb3;
-      border-radius: 10px;
-      padding: 24px;
-      margin-top: 26px;
-    }
-    .collab-box h3 {
-      color: #0f3d3e;
-      font-size: 18px;
-      margin-bottom: 14px;
-    }
-    .collab-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 12px;
-    }
-    .collab-item {
-      background-color: #ffffff;
-      padding: 15px;
-      border-radius: 6px;
-      font-size: 14px;
-      color: #222222;
-      border-left: 4px solid #c59b5f;
-    }
-
-    /* 비자·출입국 필수 안내 배너 */
-    .visa-banner {
-      background-color: #fffdf7;
-      border: 1px solid #d9c5a0;
-      border-left: 5px solid #c59b5f;
-      border-radius: 8px;
-      padding: 18px 20px;
-      margin-bottom: 22px;
-    }
-    .visa-banner p {
-      font-size: 14.5px;
-      color: #0f3d3e;
-      font-weight: bold;
-      margin-bottom: 7px;
-    }
-    .visa-banner p:last-child { margin-bottom: 0; }
-
-    /* 비자 8개 카드 (마우스 스치거나 클릭 시 상세 설명 표시) */
-    .visa-grid-8 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 16px;
-    }
-    .visa-hover-card {
-      background-color: #ffffff;
-      border: 1px solid #dce3e3;
-      border-top: 4px solid #0f3d3e;
-      border-radius: 10px;
-      padding: 18px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      transition: all 0.25s ease;
-      cursor: pointer;
-    }
-    .visa-hover-card:hover,
-    .visa-hover-card:focus-within {
-      border-top-color: #c59b5f;
-      background-color: #fffef9;
-      box-shadow: 0 6px 16px rgba(15, 61, 62, 0.14);
-      transform: translateY(-2px);
-    }
-    .visa-card-head {
-      font-size: 16px;
-      font-weight: bold;
-      color: #0f3d3e;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .visa-tag {
-      font-size: 11px;
-      background-color: #f2ece1;
-      color: #8a642c;
-      padding: 3px 8px;
-      border-radius: 10px;
-      font-weight: bold;
-    }
-    .visa-hover-desc {
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition: all 0.3s ease;
-      font-size: 13.5px;
-      color: #333333;
-    }
-    .visa-hover-card:hover .visa-hover-desc,
-    .visa-hover-card:focus-within .visa-hover-desc {
-      max-height: 260px;
-      opacity: 1;
-      margin-top: 12px;
-      padding-top: 10px;
-      border-top: 1px dashed #d5dddd;
-    }
-    .visa-hover-desc ul {
-      padding-left: 16px;
-      margin-top: 5px;
-    }
-    .visa-hover-desc li { margin-bottom: 4px; }
-
-    /* 실시간 이메일 상담 & 전화 연결 */
-    .contact-wrap {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 20px;
-      margin-top: 40px;
-    }
-    .contact-panel {
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 24px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-      border-top: 4px solid #c59b5f;
-    }
-    .contact-panel h3 {
-      color: #0f3d3e;
-      font-size: 18px;
-      margin-bottom: 14px;
-    }
-    .form-row { margin-bottom: 12px; }
-    .form-row label {
-      display: block;
-      font-size: 13px;
-      font-weight: bold;
-      color: #0f3d3e;
-      margin-bottom: 4px;
-    }
-    .form-row select, .form-row input, .form-row textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #cccccc;
-      border-radius: 6px;
-      font-size: 14px;
-      color: #111111;
-    }
-    .btn-submit {
-      width: 100%;
-      background-color: #0f3d3e;
-      color: #ffffff;
-      border: none;
-      padding: 12px;
-      border-radius: 6px;
-      font-size: 15px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .btn-submit:hover { background-color: #c59b5f; }
-    .info-card-btn {
-      display: block;
-      background-color: #f7f6f2;
-      border: 1px solid #d5dddd;
-      padding: 13px;
-      border-radius: 8px;
-      text-align: center;
-      font-weight: bold;
-      color: #0f3d3e;
-      font-size: 15px;
-      margin-bottom: 10px;
-    }
-    .info-card-btn span {
-      display: block;
-      font-size: 12px;
-      color: #4a5555;
-      font-weight: normal;
-      margin-top: 3px;
-    }
-
-    /* 하단 푸터 (계좌·팩스·이메일·7개국어 주소) */
-    .footer-area {
-      background-color: #0f3d3e;
-      color: #ffffff;
-      padding: 42px 20px;
-      margin-top: 50px;
-      font-size: 14px;
-      border-top: 4px solid #c59b5f;
-    }
-    .footer-inner { max-width: 1120px; margin: 0 auto; }
-    .footer-brand {
-      color: #e6c68e;
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 12px;
-    }
-    .footer-inner p { margin-bottom: 7px; color: #f1f5f5; }
-    .lang-box {
-      margin-top: 18px;
-      padding-top: 16px;
-      border-top: 1px solid rgba(255,255,255,0.25);
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-      gap: 8px;
-    }
-    .lang-box p {
-      background-color: rgba(255,255,255,0.09);
-      padding: 9px 12px;
-      border-radius: 6px;
-      font-size: 13px;
-      color: #ffffff;
-    }
-    .footer-copy {
-      margin-top: 22px;
-      text-align: center;
-      color: #b8c7c7;
-      font-size: 12.5px;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- 상단 메뉴 -->
-  <div class="top-bar">
-    <div class="top-inner">
-      <div class="nav-links">
-        <a href="#home">🏠 사무소 홈</a>
-        <a href="#appeal">⚖ 행정심판·내용증명</a>
-        <a href="#realestate">🏢 부동산·권리금·지속협력</a>
-        <a href="#visa">✈ 비자·급행·3자통역</a>
-        <a href="#consult">✉ 이메일·전화상담</a>
-      </div>
-      <div class="top-btns">
-        <a href="tel:010-8128-1079" class="btn-gold">📞 010-8128-1079</a>
-        <a href="#consult" class="btn-border">✉ 이메일 상담창</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- 메인 배너 -->
-  <div id="home" class="hero">
-    <div class="logo-g">G</div>
-    <h1>공감탐정행정사사무소</h1>
-    <p>행정심판 불복사유서 · 부동산 직거래 계약·권리금 · 출입국 급행대행·고용사유서·3자통역</p>
-    <div class="hero-pill">🚗 근무시간 내 출장상담 가능 (출장비 발생) | 전국 비대면 서류 접수</div>
-  </div>
-
-  <!-- 본문 시작 -->
-  <div class="container">
-
-    <!-- 1. 행정심판·내용증명·사실조사 -->
-    <h2 id="appeal" class="sec-title">⚖ 행정심판 불복사유서 · 내용증명 · 사실조사</h2>
-    <p class="sec-desc">행정사법 및 탐정업 규정에 따라 부당한 처분에 대한 불복 서면과 공식 사실확인서를 작성합니다.</p>
-    <div class="grid-3">
-      <div class="card">
-        <h3>📑 행정심판 불복 사유서 및 청구서</h3>
-        <p>음주운전 구제, 영업정지, 과징금, 이행강제금 등 부당한 행정처분에 대해 처분의 위법·부당성을 입증하는 불복 사유서와 청구서를 작성합니다.</p>
-      </div>
-      <div class="card">
-        <h3>📨 임대차·권리금·계약 관련 내용증명</h3>
