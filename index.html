@@ -6,17 +6,17 @@
   <title>공감탐정행정사사무소 | 행정처분 불복·부동산직거래·위장거주 조사·비자대행</title>
   <style>
     :root {
-      --primary: #383330;        /* 차분한 웜 차콜 브라운 (초록·남색 배제) */
-      --primary-dark: #23201e;   /* 짙은 에스프레소 차콜 */
-      --primary-light: #4f4844;  /* 미디엄 웜 그레이 */
-      --accent: #a67f4e;         /* 웜 샴페인 골드 포인트 */
-      --accent-light: #c59f6d;   /* 라이트 골드 */
-      --accent-bg: #f6f2ec;      /* 은은한 크림 베이지 배경 */
-      --bg-main: #f4f2ef;        /* 전체 배경 (스톤 아이보리) */
+      --primary: #352e42;        /* 차분한 딥 슬레이트 플럼 (갈색·남색·초록 배제) */
+      --primary-dark: #221d2b;   /* 짙은 다크 인디고 그레이 */
+      --primary-light: #4d435e;  /* 미디엄 퍼플 그레이 */
+      --accent: #6c5b7b;         /* 세련된 모던 모브·슬레이트 포인트 */
+      --accent-light: #8f7da1;   /* 라이트 모브 실버 */
+      --accent-bg: #f4f2f7;      /* 은은한 라벤더 그레이 배경 */
+      --bg-main: #f5f5f7;        /* 전체 배경 (클린 쿨 그레이) */
       --surface: #ffffff;        /* 카드 배경 */
-      --text-main: #24211f;      /* 기본 본문색 */
-      --text-muted: #5c5652;     /* 보조 텍스트 */
-      --border: #dcd6ce;         /* 테두리선 */
+      --text-main: #221f26;      /* 기본 본문색 */
+      --text-muted: #585260;     /* 보조 텍스트 */
+      --border: #dcd8e2;         /* 테두리선 */
     }
 
     * {
@@ -50,7 +50,7 @@
       top: 0;
       z-index: 1000;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.22);
-      border-bottom: 2px solid var(--accent);
+      border-bottom: 2px solid var(--accent-light);
     }
 
     .nav-container {
@@ -93,7 +93,7 @@
 
     .brand-text span {
       font-size: 12px;
-      color: #d6cfc7;
+      color: #d3cedb;
       display: block;
     }
 
@@ -110,7 +110,7 @@
       border-radius: 6px;
       font-size: 14px;
       font-weight: 600;
-      color: #e8e2db;
+      color: #e6e3ec;
       transition: all 0.2s ease;
     }
 
@@ -124,7 +124,7 @@
       background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 65%, var(--primary-light) 100%);
       color: #ffffff;
       padding: 56px 20px;
-      border-bottom: 4px solid var(--accent);
+      border-bottom: 4px solid var(--accent-light);
     }
 
     .hero-inner {
@@ -134,9 +134,9 @@
 
     .hero-badge {
       display: inline-block;
-      background-color: rgba(166, 127, 78, 0.24);
+      background-color: rgba(143, 125, 161, 0.24);
       border: 1px solid var(--accent-light);
-      color: #f7efe4;
+      color: #f3eff8;
       padding: 5px 14px;
       border-radius: 20px;
       font-size: 13px;
@@ -153,7 +153,7 @@
 
     .hero p {
       font-size: 16px;
-      color: #e3ddd5;
+      color: #e1dce8;
       max-width: 840px;
       margin-bottom: 26px;
     }
@@ -180,7 +180,7 @@
     }
 
     .btn-accent:hover {
-      background-color: #8a673c;
+      background-color: #564763;
     }
 
     .btn-outline {
@@ -226,7 +226,7 @@
       color: var(--text-muted);
     }
 
-    /* 클릭/터치 아코디언 카드 그리드 (3열 균형 배치) */
+    /* 클릭/터치 아코디언 카드 그리드 */
     .accordion-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -238,14 +238,14 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(35, 32, 30, 0.05);
+      box-shadow: 0 2px 8px rgba(34, 29, 43, 0.05);
       transition: all 0.2s ease;
       overflow: hidden;
     }
 
     details.service-card:hover {
       border-color: var(--accent);
-      box-shadow: 0 5px 15px rgba(35, 32, 30, 0.09);
+      box-shadow: 0 5px 15px rgba(34, 29, 43, 0.09);
     }
 
     details.service-card[open] {
@@ -282,7 +282,7 @@
       font-weight: 600;
       color: var(--accent);
       background-color: var(--accent-bg);
-      border: 1px solid #e3d6c5;
+      border: 1px solid #dfd8e8;
       padding: 4px 10px;
       border-radius: 14px;
       white-space: nowrap;
@@ -335,8 +335,8 @@
     /* 법령 준수 고지 박스 */
     .legal-notice {
       margin-top: 22px;
-      background-color: #ece8e2;
-      border: 1px solid #d5cdc3;
+      background-color: #ece9f0;
+      border: 1px solid #d4cedc;
       border-left: 4px solid var(--primary);
       padding: 15px 18px;
       border-radius: 8px;
@@ -361,13 +361,13 @@
 
     .collab-banner h4 {
       font-size: 18px;
-      color: #f7efe4;
+      color: #f3eff8;
       margin-bottom: 6px;
     }
 
     .collab-banner p {
       font-size: 14.5px;
-      color: #e3ddd5;
+      color: #e1dce8;
     }
 
     /* 출입국 비자 & 외국어 안내 섹션 */
@@ -444,7 +444,7 @@
     .lang-content {
       display: none;
       background-color: var(--accent-bg);
-      border: 1px solid #e3d6c5;
+      border: 1px solid #dfd8e8;
       border-radius: 8px;
       padding: 20px;
     }
@@ -533,7 +533,7 @@
       border-radius: 6px;
       font-size: 14px;
       font-family: inherit;
-      background-color: #fbfaf8;
+      background-color: #faf9fb;
     }
 
     .form-group select:focus,
@@ -567,9 +567,9 @@
     /* 푸터 및 다국어 주소 */
     footer {
       background-color: var(--primary-dark);
-      color: #d6cfc7;
+      color: #d3cedb;
       padding: 44px 20px;
-      border-top: 4px solid var(--accent);
+      border-top: 4px solid var(--accent-light);
       font-size: 14px;
     }
 
@@ -618,20 +618,20 @@
       grid-template-columns: 1fr;
       gap: 7px;
       font-size: 13px;
-      color: #e8e2db;
+      color: #e6e3ec;
     }
 
     .addr-list span.lang-tag {
       display: inline-block;
       min-width: 82px;
       font-weight: 700;
-      color: var(--accent-light);
+      color: #c4b5d6;
     }
 
     .copyright {
       text-align: center;
       font-size: 13px;
-      color: #a39b92;
+      color: #9e97a8;
     }
 
     @media (max-width: 640px) {
@@ -1105,7 +1105,7 @@
         </div>
       </div>
 
-      <!-- 일본어 추가 -->
+      <!-- 일본어 -->
       <div id="lang-jp" class="lang-content">
         <h5>韓国ビザ申請代行 · 緊急受付 · 雇用理由書作成および三者通訳サポート</h5>
         <ul>
