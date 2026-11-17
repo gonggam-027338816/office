@@ -6,17 +6,17 @@
   <title>공감탐정행정사사무소 | 행정처분 불복·부동산직거래·위장거주 조사·비자대행</title>
   <style>
     :root {
-      --primary: #344c41;        /* 차분한 세이지 포레스트 (메인 딥그린) */
-      --primary-dark: #22332a;   /* 짙은 다크 차콜 그린 */
-      --primary-light: #4c6b5b;  /* 부드러운 세이지 톤 */
-      --accent: #8b6b43;         /* 따뜻한 어반 브론즈 포인트 */
-      --accent-light: #b08d62;   /* 라이트 브론즈 */
-      --accent-bg: #f4f2ee;      /* 은은한 웜 그레이쉬 베이지 배경 */
-      --bg-main: #f5f7f6;        /* 전체 배경 (모던 그레이 틴트) */
+      --primary: #383330;        /* 차분한 웜 차콜 브라운 (초록·남색 배제) */
+      --primary-dark: #23201e;   /* 짙은 에스프레소 차콜 */
+      --primary-light: #4f4844;  /* 미디엄 웜 그레이 */
+      --accent: #a67f4e;         /* 웜 샴페인 골드 포인트 */
+      --accent-light: #c59f6d;   /* 라이트 골드 */
+      --accent-bg: #f6f2ec;      /* 은은한 크림 베이지 배경 */
+      --bg-main: #f4f2ef;        /* 전체 배경 (스톤 아이보리) */
       --surface: #ffffff;        /* 카드 배경 */
-      --text-main: #222b26;      /* 기본 본문색 */
-      --text-muted: #5a6860;     /* 보조 텍스트 */
-      --border: #d2dcda;         /* 테두리선 */
+      --text-main: #24211f;      /* 기본 본문색 */
+      --text-muted: #5c5652;     /* 보조 텍스트 */
+      --border: #dcd6ce;         /* 테두리선 */
     }
 
     * {
@@ -49,7 +49,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.22);
       border-bottom: 2px solid var(--accent);
     }
 
@@ -93,7 +93,7 @@
 
     .brand-text span {
       font-size: 12px;
-      color: #cfd8d2;
+      color: #d6cfc7;
       display: block;
     }
 
@@ -110,7 +110,7 @@
       border-radius: 6px;
       font-size: 14px;
       font-weight: 600;
-      color: #e2e8e5;
+      color: #e8e2db;
       transition: all 0.2s ease;
     }
 
@@ -134,9 +134,9 @@
 
     .hero-badge {
       display: inline-block;
-      background-color: rgba(139, 107, 67, 0.25);
+      background-color: rgba(166, 127, 78, 0.24);
       border: 1px solid var(--accent-light);
-      color: #f7f0e8;
+      color: #f7efe4;
       padding: 5px 14px;
       border-radius: 20px;
       font-size: 13px;
@@ -153,7 +153,7 @@
 
     .hero p {
       font-size: 16px;
-      color: #dfe6e2;
+      color: #e3ddd5;
       max-width: 840px;
       margin-bottom: 26px;
     }
@@ -180,11 +180,11 @@
     }
 
     .btn-accent:hover {
-      background-color: #725533;
+      background-color: #8a673c;
     }
 
     .btn-outline {
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.08);
       color: #ffffff;
       border: 1px solid rgba(255, 255, 255, 0.45);
       padding: 13px 22px;
@@ -198,7 +198,7 @@
     }
 
     .btn-outline:hover {
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: rgba(255, 255, 255, 0.18);
     }
 
     /* 공통 섹션 스타일 */
@@ -238,14 +238,14 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(34, 51, 42, 0.05);
+      box-shadow: 0 2px 8px rgba(35, 32, 30, 0.05);
       transition: all 0.2s ease;
       overflow: hidden;
     }
 
     details.service-card:hover {
       border-color: var(--accent);
-      box-shadow: 0 5px 15px rgba(34, 51, 42, 0.09);
+      box-shadow: 0 5px 15px rgba(35, 32, 30, 0.09);
     }
 
     details.service-card[open] {
@@ -282,7 +282,7 @@
       font-weight: 600;
       color: var(--accent);
       background-color: var(--accent-bg);
-      border: 1px solid #e3d9cc;
+      border: 1px solid #e3d6c5;
       padding: 4px 10px;
       border-radius: 14px;
       white-space: nowrap;
@@ -335,8 +335,8 @@
     /* 법령 준수 고지 박스 */
     .legal-notice {
       margin-top: 22px;
-      background-color: #eaf0ed;
-      border: 1px solid #c8d7d0;
+      background-color: #ece8e2;
+      border: 1px solid #d5cdc3;
       border-left: 4px solid var(--primary);
       padding: 15px 18px;
       border-radius: 8px;
@@ -361,13 +361,13 @@
 
     .collab-banner h4 {
       font-size: 18px;
-      color: #f7f0e8;
+      color: #f7efe4;
       margin-bottom: 6px;
     }
 
     .collab-banner p {
       font-size: 14.5px;
-      color: #e2e8e5;
+      color: #e3ddd5;
     }
 
     /* 출입국 비자 & 외국어 안내 섹션 */
@@ -397,7 +397,7 @@
       color: var(--text-muted);
     }
 
-    /* 다국어 비자 안내창 (5개국어 탭) */
+    /* 다국어 비자 안내창 (6개국어 탭) */
     .lang-panel {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -415,22 +415,23 @@
     }
 
     .lang-tabs {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 8px;
       margin-bottom: 18px;
     }
 
     .lang-tab {
-      padding: 9px 16px;
+      padding: 10px 12px;
       border-radius: 6px;
       border: 1px solid var(--border);
       background-color: var(--bg-main);
       color: var(--primary-dark);
       font-weight: 700;
-      font-size: 14px;
+      font-size: 13.5px;
       cursor: pointer;
       transition: all 0.2s;
+      text-align: center;
     }
 
     .lang-tab.active,
@@ -443,7 +444,7 @@
     .lang-content {
       display: none;
       background-color: var(--accent-bg);
-      border: 1px solid #e3d9cc;
+      border: 1px solid #e3d6c5;
       border-radius: 8px;
       padding: 20px;
     }
@@ -532,7 +533,7 @@
       border-radius: 6px;
       font-size: 14px;
       font-family: inherit;
-      background-color: #fafbfb;
+      background-color: #fbfaf8;
     }
 
     .form-group select:focus,
@@ -566,7 +567,7 @@
     /* 푸터 및 다국어 주소 */
     footer {
       background-color: var(--primary-dark);
-      color: #cfd8d2;
+      color: #d6cfc7;
       padding: 44px 20px;
       border-top: 4px solid var(--accent);
       font-size: 14px;
@@ -617,7 +618,7 @@
       grid-template-columns: 1fr;
       gap: 7px;
       font-size: 13px;
-      color: #e2e8e5;
+      color: #e8e2db;
     }
 
     .addr-list span.lang-tag {
@@ -630,7 +631,7 @@
     .copyright {
       text-align: center;
       font-size: 13px;
-      color: #94a39b;
+      color: #a39b92;
     }
 
     @media (max-width: 640px) {
@@ -954,7 +955,7 @@
       </div>
       <div class="highlight-box">
         <h4>🗣 외국어 3자간 통화·통역 지원</h4>
-        <p>영어 · 중국어 · 베트남어 · 필리핀어(따갈로그어) · 태국어 외국인 의뢰인을 위한 3자간 통화 및 통역 상담을 지원합니다. (통역 진행 시 추가 비용 발생)</p>
+        <p>영어 · 중국어 · 베트남어 · 필리핀어(따갈로그어) · 태국어 · 일본어 외국인 의뢰인을 위한 3자간 통화 및 통역 상담을 지원합니다. (통역 진행 시 추가 비용 발생)</p>
       </div>
       <div class="highlight-box">
         <h4>📝 고용사유서 · 초청장 · 사범심사 소명서</h4>
@@ -1017,7 +1018,7 @@
       </details>
     </div>
 
-    <!-- 다국어 비자 및 급행 안내창 -->
+    <!-- 다국어 비자 및 급행 안내창 (6개국어 꽉 채움) -->
     <div class="lang-panel">
       <div class="lang-panel-title">🌐 외국어 비자 · 급행 대행 · 고용사유서 안내창 (언어를 클릭하세요)</div>
       <div class="lang-tabs">
@@ -1026,6 +1027,7 @@
         <button class="lang-tab" onclick="openLang(event, 'lang-vn')">🇻🇳 Tiếng Việt (베트남어)</button>
         <button class="lang-tab" onclick="openLang(event, 'lang-ph')">🇵🇭 Filipino / English (필리핀)</button>
         <button class="lang-tab" onclick="openLang(event, 'lang-th')">🇹🇭 ภาษาไทย (태국어)</button>
+        <button class="lang-tab" onclick="openLang(event, 'lang-jp')">🇯🇵 日本語 (일본어)</button>
       </div>
 
       <!-- 영어 -->
@@ -1035,7 +1037,7 @@
           <li><strong>Urgent Visa Filing (Without Reservation):</strong> Even if immigration reservation slots are full, urgent administrative filing is available (additional fee applies).</li>
           <li><strong>Visa & Immigration Services:</strong> E-7, E-9, F-6 Marriage Visa, F-2, F-5 Permanent Residency, D-2, D-10, D-8, and Overstay/Immigration Offender Review statements.</li>
           <li><strong>Professional Drafting:</strong> Employment Justification Letters, Invitation Letters, and Humanitarian Petition Letters.</li>
-          <li><strong>3-Way Interpretation Support:</strong> Available in English, Chinese, Vietnamese, Tagalog, and Thai (additional fee applies).</li>
+          <li><strong>3-Way Interpretation Support:</strong> Available in English, Chinese, Vietnamese, Tagalog, Thai, and Japanese (additional fee applies).</li>
         </ul>
         <div class="lang-cta">
           <a href="tel:010-8128-1079">📞 Call Now: 010-8128-1079</a>
@@ -1100,6 +1102,21 @@
         <div class="lang-cta">
           <a href="tel:010-8128-1079">📞 โทรติดต่อทันที: 010-8128-1079</a>
           <a href="mailto:3351ben@daum.net?subject=Visa%20Consultation%20Thailand" class="mail-btn">✉ ส่งอีเมล: 3351ben@daum.net</a>
+        </div>
+      </div>
+
+      <!-- 일본어 추가 -->
+      <div id="lang-jp" class="lang-content">
+        <h5>韓国ビザ申請代行 · 緊急受付 · 雇用理由書作成および三者通訳サポート</h5>
+        <ul>
+          <li><strong>出入国緊急行政代行（予約なし対応）：</strong> 出入国管理局の訪問予約が取れない場合でも、「緊急行政代行」により即時受付・申請が可能です（緊急代行には追加費用が発生します）。</li>
+          <li><strong>各種ビザ・在留資格手続き：</strong> E-7専門職就労、F-6結婚移民、F-2居住ビザ、F-5永住権、D-2留学、D-10求職、D-8企業投資ビザの変更・延長。</li>
+          <li><strong>専門書類の作成：</strong> 雇用理由書、招聘理由書、不法滞在・事犯審査の反省文および人道的嘆願書の作成。</li>
+          <li><strong>日本語三者通話・通訳サポート：</strong> 外国人依頼者のための日本語三者間通話および同行通訳に対応します（通訳進行時は追加費用が発生します）。</li>
+        </ul>
+        <div class="lang-cta">
+          <a href="tel:010-8128-1079">📞 お電話でのご相談: 010-8128-1079</a>
+          <a href="mailto:3351ben@daum.net?subject=韓国ビザ・出入国書類のご相談" class="mail-btn">✉ メール送信: 3351ben@daum.net</a>
         </div>
       </div>
     </div>
@@ -1180,7 +1197,7 @@
         </div>
       </div>
 
-      <!-- 다국어 사무소 주소 -->
+      <!-- 다국어 사무소 주소 (7개국어) -->
       <div class="multilang-addresses">
         <h5>📍 사무소 오시는 길 · 다국어 주소 안내 (Office Address)</h5>
         <div class="addr-list">
@@ -1190,6 +1207,7 @@
           <div><span class="lang-tag">[Tiếng Việt]</span> Phòng 302, Tòa nhà Samsong, 34 Jongno 3-gil, Jongno-gu, Seoul, Hàn Quốc (03156)</div>
           <div><span class="lang-tag">[Filipino]</span> #302, Samsong Bldg., 34, Jongno 3-gil, Jongno-gu, Seoul, Republic of Korea (03156)</div>
           <div><span class="lang-tag">[ภาษาไทย]</span> ห้อง 302 อาคารซัมซอง 34 จงโน 3-กิล เขตจงโน กรุงโซล สาธารณรัฐเกาหลี (03156)</div>
+          <div><span class="lang-tag">[日本語]</span> 大韓民国ソウル特別市鍾路区鍾路3キル34、三松ビル302号 (清進洞、郵便番号 03156)</div>
         </div>
       </div>
 
