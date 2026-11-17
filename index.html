@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>공감탐정행정사사무소 | 행정심판·불복서류·부동산직거래·출입국비자</title>
+  <title>공감탐정행정사사무소 | 행정처분 불복·부동산직거래·위장거주 사실조사·비자대행</title>
   <style>
     :root {
-      --primary: #2b3a4a;        /* 차분한 회청색 (Slate Blue-Grey) */
-      --primary-dark: #1d2834;   /* 짙은 회청색 */
-      --primary-light: #3d5266;  /* 밝은 회청색 */
-      --bronze: #a47551;         /* 브론즈 포인트 */
-      --bronze-light: #c49a76;   /* 라이트 브론즈 */
-      --bronze-bg: #f8f4f0;      /* 은은한 브론즈 틴트 배경 */
-      --bg-main: #f4f6f8;        /* 전체 배경 */
+      --primary: #1f3629;        /* 차분한 딥 포레스트 그린 */
+      --primary-dark: #13221a;   /* 짙은 차콜 그린 */
+      --primary-light: #2e4d3b;  /* 미디엄 포레스트 */
+      --accent: #b0803c;         /* 앤틱 앰버 골드 */
+      --accent-light: #cfa15d;   /* 라이트 앰버 */
+      --accent-bg: #f7f3eb;      /* 은은한 웜 크림 배경 */
+      --bg-main: #f3f5f3;        /* 전체 배경 */
       --surface: #ffffff;        /* 카드 배경 */
-      --text-main: #1f2933;      /* 기본 본문색 */
-      --text-muted: #52606d;     /* 보조 텍스트 */
-      --border: #d9e2ec;         /* 테두리선 */
+      --text-main: #1c2420;      /* 기본 본문색 */
+      --text-muted: #4e5d54;     /* 보조 텍스트 */
+      --border: #d4ddd7;         /* 테두리선 */
     }
 
     * {
@@ -49,8 +49,8 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
-      border-bottom: 2px solid var(--bronze);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      border-bottom: 2px solid var(--accent);
     }
 
     .nav-container {
@@ -74,7 +74,7 @@
       width: 42px;
       height: 42px;
       border-radius: 10px;
-      background: linear-gradient(135deg, var(--bronze), var(--bronze-light));
+      background: linear-gradient(135deg, var(--accent), var(--accent-light));
       color: #ffffff;
       font-weight: 800;
       font-size: 22px;
@@ -93,7 +93,7 @@
 
     .brand-text span {
       font-size: 12px;
-      color: #cbd5e1;
+      color: #cbd5cf;
       display: block;
     }
 
@@ -110,12 +110,12 @@
       border-radius: 6px;
       font-size: 14px;
       font-weight: 600;
-      color: #e2e8f0;
+      color: #e2e8e4;
       transition: all 0.2s ease;
     }
 
     nav a:hover {
-      background-color: var(--bronze);
+      background-color: var(--accent);
       color: #ffffff;
     }
 
@@ -124,7 +124,7 @@
       background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 65%, var(--primary-light) 100%);
       color: #ffffff;
       padding: 56px 20px;
-      border-bottom: 4px solid var(--bronze);
+      border-bottom: 4px solid var(--accent);
     }
 
     .hero-inner {
@@ -134,9 +134,9 @@
 
     .hero-badge {
       display: inline-block;
-      background-color: rgba(164, 117, 81, 0.25);
-      border: 1px solid var(--bronze-light);
-      color: #f3e5d8;
+      background-color: rgba(176, 128, 60, 0.22);
+      border: 1px solid var(--accent-light);
+      color: #f5e6cc;
       padding: 5px 14px;
       border-radius: 20px;
       font-size: 13px;
@@ -153,8 +153,8 @@
 
     .hero p {
       font-size: 16px;
-      color: #d9e2ec;
-      max-width: 820px;
+      color: #dce4df;
+      max-width: 840px;
       margin-bottom: 26px;
     }
 
@@ -164,8 +164,8 @@
       gap: 12px;
     }
 
-    .btn-bronze {
-      background-color: var(--bronze);
+    .btn-accent {
+      background-color: var(--accent);
       color: #ffffff;
       padding: 13px 24px;
       border-radius: 8px;
@@ -179,8 +179,8 @@
       cursor: pointer;
     }
 
-    .btn-bronze:hover {
-      background-color: #8c6141;
+    .btn-accent:hover {
+      background-color: #93682c;
     }
 
     .btn-outline {
@@ -210,7 +210,7 @@
 
     .section-header {
       margin-bottom: 28px;
-      border-left: 5px solid var(--bronze);
+      border-left: 5px solid var(--accent);
       padding-left: 16px;
     }
 
@@ -226,7 +226,7 @@
       color: var(--text-muted);
     }
 
-    /* 클릭/터치 아코디언 카드 그리드 */
+    /* 클릭/터치 아코디언 카드 그리드 (3열 균형 배치) */
     .accordion-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -238,18 +238,18 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(29, 40, 52, 0.05);
+      box-shadow: 0 2px 8px rgba(19, 34, 26, 0.05);
       transition: all 0.2s ease;
       overflow: hidden;
     }
 
     details.service-card:hover {
-      border-color: var(--bronze);
-      box-shadow: 0 5px 15px rgba(29, 40, 52, 0.09);
+      border-color: var(--accent);
+      box-shadow: 0 5px 15px rgba(19, 34, 26, 0.09);
     }
 
     details.service-card[open] {
-      border-color: var(--bronze);
+      border-color: var(--accent);
       background-color: #ffffff;
     }
 
@@ -280,9 +280,9 @@
     .toggle-badge {
       font-size: 12px;
       font-weight: 600;
-      color: var(--bronze);
-      background-color: var(--bronze-bg);
-      border: 1px solid #e6d5c5;
+      color: var(--accent);
+      background-color: var(--accent-bg);
+      border: 1px solid #e5d7be;
       padding: 4px 10px;
       border-radius: 14px;
       white-space: nowrap;
@@ -290,9 +290,9 @@
     }
 
     details.service-card[open] .toggle-badge {
-      background-color: var(--bronze);
+      background-color: var(--accent);
       color: #ffffff;
-      border-color: var(--bronze);
+      border-color: var(--accent);
     }
 
     .card-body {
@@ -310,8 +310,8 @@
     }
 
     .doc-box {
-      background-color: var(--bronze-bg);
-      border-left: 3px solid var(--bronze);
+      background-color: var(--accent-bg);
+      border-left: 3px solid var(--accent);
       padding: 12px 14px;
       border-radius: 6px;
       font-size: 13.5px;
@@ -335,8 +335,8 @@
     /* 법령 준수 고지 박스 */
     .legal-notice {
       margin-top: 22px;
-      background-color: #edf2f7;
-      border: 1px solid #cbd5e1;
+      background-color: #e8eee9;
+      border: 1px solid #c5d3ca;
       border-left: 4px solid var(--primary);
       padding: 15px 18px;
       border-radius: 8px;
@@ -344,14 +344,14 @@
       color: var(--primary-dark);
     }
 
-    /* 부동산 장기 협력 배너 */
+    /* 장기 협력 배너 */
     .collab-banner {
       margin-top: 22px;
       background: linear-gradient(to right, var(--primary-dark), var(--primary));
       color: #ffffff;
       padding: 22px 24px;
       border-radius: 10px;
-      border-left: 5px solid var(--bronze-light);
+      border-left: 5px solid var(--accent-light);
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -361,13 +361,13 @@
 
     .collab-banner h4 {
       font-size: 18px;
-      color: #f3e5d8;
+      color: #f5e6cc;
       margin-bottom: 6px;
     }
 
     .collab-banner p {
       font-size: 14.5px;
-      color: #e2e8f0;
+      color: #e2e8e4;
     }
 
     /* 출입국 비자 & 외국어 안내 섹션 */
@@ -381,7 +381,7 @@
     .highlight-box {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-top: 3px solid var(--bronze);
+      border-top: 3px solid var(--accent);
       padding: 16px 18px;
       border-radius: 8px;
     }
@@ -442,8 +442,8 @@
 
     .lang-content {
       display: none;
-      background-color: var(--bronze-bg);
-      border: 1px solid #e6d5c5;
+      background-color: var(--accent-bg);
+      border: 1px solid #e5d7be;
       border-radius: 8px;
       padding: 20px;
     }
@@ -476,7 +476,7 @@
     }
 
     .lang-cta a {
-      background-color: var(--bronze);
+      background-color: var(--accent);
       color: #ffffff;
       padding: 9px 16px;
       border-radius: 6px;
@@ -508,7 +508,7 @@
       color: var(--primary-dark);
       margin-bottom: 14px;
       padding-bottom: 10px;
-      border-bottom: 2px solid var(--bronze-bg);
+      border-bottom: 2px solid var(--accent-bg);
     }
 
     .form-group {
@@ -532,14 +532,14 @@
       border-radius: 6px;
       font-size: 14px;
       font-family: inherit;
-      background-color: #fbfcfd;
+      background-color: #fbfcfb;
     }
 
     .form-group select:focus,
     .form-group input:focus,
     .form-group textarea:focus {
       outline: none;
-      border-color: var(--bronze);
+      border-color: var(--accent);
       background-color: #ffffff;
     }
 
@@ -548,7 +548,7 @@
       border-radius: 8px;
       background-color: var(--bg-main);
       margin-bottom: 12px;
-      border-left: 4px solid var(--bronze);
+      border-left: 4px solid var(--accent);
     }
 
     .contact-item strong {
@@ -566,9 +566,9 @@
     /* 푸터 및 다국어 주소 */
     footer {
       background-color: var(--primary-dark);
-      color: #cbd5e1;
+      color: #cbd5cf;
       padding: 44px 20px;
-      border-top: 4px solid var(--bronze);
+      border-top: 4px solid var(--accent);
       font-size: 14px;
     }
 
@@ -607,7 +607,7 @@
     }
 
     .multilang-addresses h5 {
-      color: var(--bronze-light);
+      color: var(--accent-light);
       font-size: 14.5px;
       margin-bottom: 10px;
     }
@@ -617,20 +617,20 @@
       grid-template-columns: 1fr;
       gap: 7px;
       font-size: 13px;
-      color: #e2e8f0;
+      color: #e2e8e4;
     }
 
     .addr-list span.lang-tag {
       display: inline-block;
       min-width: 82px;
       font-weight: 700;
-      color: var(--bronze-light);
+      color: var(--accent-light);
     }
 
     .copyright {
       text-align: center;
       font-size: 13px;
-      color: #94a3b8;
+      color: #94a39b;
     }
 
     @media (max-width: 640px) {
@@ -652,14 +652,14 @@
         <div class="logo-emblem">G</div>
         <div class="brand-text">
           <h1>공감탐정행정사사무소</h1>
-          <span>행정처분 불복·행정서류 제출대행 · 부동산 직거래·특약 · 비자·출입국</span>
+          <span>행정처분 불복·행정서류 제출대행 · 부동산 직거래·위장거주 조사 · 비자·국제결혼</span>
         </div>
       </a>
       <nav>
         <ul>
           <li><a href="#home">사무소 홈</a></li>
           <li><a href="#appeal">불복·행정서류</a></li>
-          <li><a href="#realestate">부동산·중개협력</a></li>
+          <li><a href="#realestate">부동산·업체협력</a></li>
           <li><a href="#visa">비자·외국어안내</a></li>
           <li><a href="#consult">상담·연락처</a></li>
         </ul>
@@ -671,19 +671,19 @@
   <section id="home" class="hero">
     <div class="hero-inner">
       <div class="hero-badge">행정사법 준수 · 전국 비대면 서류 접수 · 근무시간 내 출장상담 가능 (출장비 발생)</div>
-      <h2>정확한 행정서류 작성과 제출 대행,<br />분쟁을 예방하는 부동산 직거래·특약 설계</h2>
+      <h2>행정서류 작성과 제출 대행,<br />분쟁을 예방하는 부동산 직거래·특약 설계</h2>
       <p>
         각종 행정처분 불복신청서·행정심판·소명서 작성부터 고객이 작성한 자필 초안의 정리 및 행정기관 제출 대행,
-        부동산 직거래·권리금 계약서, 출입국 비자·고용사유서까지 법령이 정한 범위 내에서 책임 있게 수행합니다.
+        부동산 직거래·권리금 계약서, 임대인 위장거주 사실조사, 출입국 비자·고용사유서까지 법령이 정한 범위 내에서 책임 있게 수행합니다.
       </p>
       <div class="hero-actions">
-        <a href="tel:010-8128-1079" class="btn-bronze">📞 대표 직통 전화: 010-8128-1079</a>
+        <a href="tel:010-8128-1079" class="btn-accent">📞 대표 직통 전화: 010-8128-1079</a>
         <a href="mailto:3351ben@daum.net" class="btn-outline">✉ 이메일 서류 검토 요청 (3351ben@daum.net)</a>
       </div>
     </div>
   </section>
 
-  <!-- 섹션 1: 행정처분 불복 및 행정서류 작성·제출 대행 -->
+  <!-- 섹션 1: 행정처분 불복 및 행정서류 작성·제출 대행 (6개 카드) -->
   <section id="appeal" class="section">
     <div class="section-header">
       <h3>⚖ 행정처분 불복 및 행정서류 작성 · 제출 대행</h3>
@@ -811,11 +811,11 @@
     </div>
   </section>
 
-  <!-- 섹션 2: 부동산 직거래·특약·권리금 및 중개사무소 협력 -->
+  <!-- 섹션 2: 부동산 직거래·특약·권리금·위장거주 조사 및 중개·국제결혼업체 협력 (6개 카드 빈칸 없이 구성) -->
   <section id="realestate" class="section" style="padding-top: 10px;">
     <div class="section-header">
-      <h3>🏢 부동산 직거래 계약 · 특약 · 권리금 및 중개사무소 서류 협력</h3>
-      <p>당사자 간 직거래 분쟁 예방과 공인중개사사무소의 계약·특약 문서 업무를 전문적으로 지원합니다. 각 항목을 눌러 확인하세요.</p>
+      <h3>🏢 부동산 직거래 · 권리금 · 위장거주 조사 및 전문업체 지속 협력</h3>
+      <p>빈칸 없이 구성된 6대 부동산·협업 업무입니다. 각 항목을 클릭(터치)하시면 상세 설명과 필요 자료가 펼쳐집니다.</p>
     </div>
 
     <div class="accordion-grid">
@@ -875,37 +875,56 @@
         </div>
       </details>
 
-      <!-- 부동산 4 -->
+      <!-- 부동산 4: 임대인 위장거주 사실조사 추가 -->
       <details class="service-card">
         <summary>
-          <span class="summary-title">🏛 부동산중개사무소와 장기적인 서류 업무 협력</span>
+          <span class="summary-title">🕵 임대인 위장거주(실거주 위반) 사실조사</span>
           <span class="toggle-badge">클릭하여 펼치기</span>
         </summary>
         <div class="card-body">
-          <p>전국 공인중개사사무소 및 부동산 컨설팅 업체와 장기적인 업무 협약(파트너십)을 맺고, 중개 현장에서 발생하는 복잡한 권리관계 정리, 상가 권리금 계약, 각종 행정 인허가 및 사실확인 서류를 신속히 지원합니다.</p>
+          <p>임대인이 계약갱신청구권을 거절하면서 본인이 실제 거주하겠다고 하였으나 실제로는 거주하지 않고 제3자에게 임대하는 등 위장임대·실거주 위반 정황에 대해 적법한 범위 내에서 사실조사를 수행하고 공식 사실확인 보고서를 작성합니다.</p>
           <div class="doc-box">
-            <strong>📁 협력 진행 방식</strong>
+            <strong>📁 준비할 기본 서류</strong>
             <ul>
-              <li>중개사무소 전용 직통 핫라인(010-8128-1079) 및 이메일 비대면 신속 검토</li>
-              <li>사안별 건당 의뢰 또는 월 단위 정기 서류 협력 가능</li>
+              <li>기존 임대차계약서 및 계약갱신 거절 통지 내역(문자, 내용증명 등)</li>
+              <li>해당 목적물 주소 및 등기사항전부증명서</li>
+              <li>임대인 위장거주 정황 관련 기초 자료</li>
             </ul>
           </div>
         </div>
       </details>
 
-      <!-- 부동산 5 -->
+      <!-- 부동산 5: 중개인·중개법인 지속 협력 통합 -->
       <details class="service-card">
         <summary>
-          <span class="summary-title">📋 중개사무소의 반복적인 계약서·특약 작성 의뢰</span>
+          <span class="summary-title">🏛 부동산 중개인·중개법인과 지속적 업무 협력</span>
           <span class="toggle-badge">클릭하여 펼치기</span>
         </summary>
         <div class="card-body">
-          <p>다수의 매물 계약을 처리하는 부동산중개사무소를 위해, 반복적으로 발생하는 특수 물건 계약서, 상가·오피스텔 임대차 특약 문구, 합의서·확인서 양식을 표준화하고 신속히 작성·검토해 드립니다.</p>
+          <p>전국 공인중개사사무소 및 부동산 중개법인과 장기적인 업무 협력을 맺고, 직거래·권리금 계약서 작성, 반복적으로 발생하는 특수 물건 계약서 및 임대차·매매 특약 문구 작성 의뢰를 신속히 지원합니다.</p>
           <div class="doc-box">
-            <strong>📁 의뢰 시 필요 자료</strong>
+            <strong>📁 협력 진행 방식 및 필요 자료</strong>
             <ul>
-              <li>거래 물건 기본 정보(등기부등본, 건축물대장)</li>
-              <li>매도인·매수인(또는 임대인·임차인) 간 핵심 합의 사항 요약</li>
+              <li>중개사무소·중개법인 전용 직통 핫라인(010-8128-1079) 및 이메일 비대면 신속 검토</li>
+              <li>거래 물건 기본 정보(등기부등본, 건축물대장) 및 당사자 핵심 합의 사항 요약</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <!-- 부동산 6: 국제결혼중개업체 지속 교류 및 비자 대행 -->
+      <details class="service-card">
+        <summary>
+          <span class="summary-title">💍 국제결혼중개업체 지속 교류 · 비자 대행</span>
+          <span class="toggle-badge">클릭하여 펼치기</span>
+        </summary>
+        <div class="card-body">
+          <p>국제결혼중개업체 및 관련 기관과 지속적인 업무 교류·협약(MOU)을 체결하여, 양국 혼인신고, 결혼이민(F-6) 초청장, 교제경위서 작성, 현지 서류 번역·인증 및 비자 발급 대행을 원스톱으로 전담 지원합니다.</p>
+          <div class="doc-box">
+            <strong>📁 협력 및 대행 준비 서류</strong>
+            <ul>
+              <li>국제결혼중개업체 정기 협력 문의(직통 전화 또는 이메일)</li>
+              <li>초청인·피초청인 인적사항, 혼인관계증명서, 소득·주거 입증 기본 서류</li>
             </ul>
           </div>
         </div>
@@ -914,10 +933,10 @@
 
     <div class="collab-banner">
       <div>
-        <h4>🤝 공인중개사사무소 · 부동산 업체 정기 서류 협력 안내</h4>
-        <p>반복적인 특약 설계, 직거래·권리금 계약서 작성, 현금거래 사실확인서 및 행정서류 검토가 필요한 중개사무소와 장기 협력합니다.</p>
+        <h4>🤝 부동산 중개인·중개법인 및 국제결혼중개업체 장기·지속 협력 안내</h4>
+        <p>반복적인 계약서·특약 작성, 직거래·권리금 계약서, 위장거주 사실조사 및 국제결혼(F-6) 비자 대행까지 지속적인 파트너십으로 지원합니다.</p>
       </div>
-      <a href="#consult" class="btn-bronze">협력 및 서류 의뢰 문의하기</a>
+      <a href="#consult" class="btn-accent">협력 및 서류 의뢰 문의하기</a>
     </div>
   </section>
 
@@ -1102,9 +1121,9 @@
             <label for="consult-category">상담 분야 선택 (4개 전문 분야)</label>
             <select id="consult-category" required>
               <option value="행정처분 불복·행정심판·자필초안 정리 및 제출대행">1. 행정처분 불복·행정심판·자필초안 정리 및 제출대행</option>
-              <option value="부동산 직거래 계약서·특약·권리금·중개사무소 협력">2. 부동산 직거래 계약서·특약·권리금·중개사무소 협력</option>
+              <option value="부동산 직거래·권리금·위장거주 사실조사·중개법인 협력">2. 부동산 직거래·권리금·위장거주 사실조사·중개법인 협력</option>
               <option value="비자·출입국·고용사유서·불법체류 소명서">3. 비자·출입국·고용사유서·불법체류 소명서</option>
-              <option value="출입국 급행대행 및 외국어 3자 통역 문의">4. 출입국 급행대행 및 외국어 3자 통역 문의</option>
+              <option value="국제결혼중개업체 지속 교류·출입국 급행대행·3자 통역">4. 국제결혼중개업체 지속 교류·출입국 급행대행·3자 통역</option>
             </select>
           </div>
           <div class="form-group">
@@ -1113,12 +1132,12 @@
           </div>
           <div class="form-group">
             <label for="consult-message">문의 내용 (초안 검토 요청 시 간략한 사연 기재)</label>
-            <textarea id="consult-message" rows="4" placeholder="처분 내용, 계약 조건, 비자 종류 등 문의하실 내용을 적어주세요." required></textarea>
+            <textarea id="consult-message" rows="4" placeholder="처분 내용, 계약·위장거주 조사 조건, 비자 또는 업체 협력 문의 내용을 적어주세요." required></textarea>
           </div>
-          <button type="submit" class="btn-bronze" style="width: 100%; justify-content: center;">✉ 이메일 상담 내용 전송하기</button>
+          <button type="submit" class="btn-accent" style="width: 100%; justify-content: center;">✉ 이메일 상담 내용 전송하기</button>
         </form>
         <p style="font-size: 13px; color: var(--text-muted); margin-top: 10px;">
-          ※ 메일 프로그램이 자동으로 열리지 않을 경우 <a href="mailto:3351ben@daum.net" style="color: var(--bronze); font-weight: 700; text-decoration: underline;">3351ben@daum.net</a>으로 직접 보내주시면 확인 후 연락드립니다.
+          ※ 메일 프로그램이 자동으로 열리지 않을 경우 <a href="mailto:3351ben@daum.net" style="color: var(--accent); font-weight: 700; text-decoration: underline;">3351ben@daum.net</a>으로 직접 보내주시면 확인 후 연락드립니다.
         </p>
       </div>
 
@@ -1134,7 +1153,7 @@
         <div class="contact-item">
           <a href="mailto:3351ben@daum.net">
             <strong>✉ 3351ben@daum.net (클릭 시 바로 이메일 작성)</strong>
-            <span>자필 초안, 처분 통지서, 계약서 검토 자료 발송</span>
+            <span>자필 초안, 처분 통지서, 계약서·사실조사 검토 자료 발송</span>
           </a>
         </div>
         <div class="contact-item">
@@ -1157,7 +1176,7 @@
           <h4>공감탐정행정사사무소</h4>
           <p>대표전화: <a href="tel:010-8128-1079" style="color: #ffffff; font-weight: 700;">010-8128-1079</a> | 팩스(FAX): 02-723-1126 | 이메일: <a href="mailto:3351ben@daum.net" style="color: #ffffff; font-weight: 700;">3351ben@daum.net</a></p>
           <p>사업자등록번호: 821-46-01200 | 상담안내: 근무시간 내 출장상담 가능 (출장비 발생)</p>
-          <p>🏦 입금 계좌: KB국민은행 006001-01-356388 (예금주: 신아윤(공감탐정행정사사무소)) | 💳 방문 시 신용카드 결제 가능</p>
+          <p>🏦 입금 계좌: KB국민은행 006001-01-356388 (예금주: 신00(공감탐정행정사사무소)) | 💳 방문 시 신용카드 결제 가능</p>
         </div>
       </div>
 
